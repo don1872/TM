@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Node (not used, but just in case)
+node_modules/
+
+# Deploy tooling caches
+.vercel
+.netlify
+
+# Editor
+.vscode/
+.idea/

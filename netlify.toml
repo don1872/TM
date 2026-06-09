@@ -1,0 +1,12 @@
+# Netlify 部署配置 —— 纯静态站点，无需构建
+# 直接 Import from Git 即可，发布目录为仓库根目录
+
+[build]
+  publish = "."
+  command = ""
+
+# 静态资源长缓存（图片、CSS、图标）
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
